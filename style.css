@@ -1,82 +1,88 @@
-/* Reset */
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
+/* Body Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f5f5;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
     color: #333;
     line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 20px;
 }
 
-/* Header styling */
+/* Header Styles */
 header {
-    background-color: #ffe6f2;
-    padding: 20px;
-    border-radius: 8px;
     text-align: center;
-    width: 100%;
-    max-width: 800px;
-    margin-bottom: 30px;
+    background-color: #f0c9d9;
+    padding: 20px 0;
+    border-radius: 10px;
 }
 
 header h1 {
-    color: #d147a3;
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    color: #e6006c;
+    font-size: 36px;
 }
 
 header p {
-    font-size: 1.2em;
     color: #555;
+    font-size: 18px;
 }
 
-/* Section styling */
+/* Section Styles */
 section {
-    background-color: #fff;
+    margin: 20px 0;
     padding: 20px;
+    background-color: #ffffff;
     border-radius: 8px;
-    width: 100%;
-    max-width: 800px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-section h2 {
-    color: #d147a3;
-    margin-bottom: 10px;
+h2 {
+    color: #e6006c;
+    font-size: 28px;
 }
 
-section p, section ul {
-    font-size: 1.1em;
+p {
+    font-size: 16px;
     color: #555;
 }
 
 ul {
-    list-style-type: disc;
-    padding-left: 20px;
+    list-style: disc;
+    margin-left: 20px;
 }
 
 ul li {
-    margin-bottom: 5px;
+    font-size: 16px;
 }
 
-/* Footer styling */
+/* Footer Styles */
 footer {
     text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
     color: #777;
-    font-size: 0.9em;
-    margin-top: 20px;
 }
 
-footer p {
-    color: #999;
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
 }
